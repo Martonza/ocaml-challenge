@@ -1,0 +1,3 @@
+let mux2 (s0:bool) (a:bool) (b:bool) = (s0 && a) || (not(s0) && b);;
+
+let mux4 (s0:bool) (s1:bool) (a0:bool) (a1:bool) (a2:bool) (a3:bool) = mux2 s0 (mux2 s1 a3 a2) (mux2 s1 a1 a0);;

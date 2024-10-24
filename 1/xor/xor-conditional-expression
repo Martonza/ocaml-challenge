@@ -1,0 +1,1 @@
+let xor x y = if(x) then (if(y) then false else true) else (if(not(y)) then false else true);; 

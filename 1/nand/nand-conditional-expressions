@@ -1,0 +1,1 @@
+let nand x y = if(x) then (if(y) then false else true) else true;;

@@ -1,0 +1,11 @@
+type weekday = Monday | Tuesday | Wednesday | Thursday | Friday;;
+type course = ALF | LIP;;
+
+let isLecture d c = match(d,c) with 
+      (Tuesday,ALF) -> true 
+    | (Thursday,ALF) -> true 
+    | (Friday,ALF) -> true 
+    | (_,ALF) -> false 
+    | (Wednesday,LIP) -> true 
+    | (Thursday,LIP) -> true 
+    | (_,LIP) -> false;; 

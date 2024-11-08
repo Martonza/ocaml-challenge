@@ -1,0 +1,1 @@
+let parrot_trouble a b = if (b>23 || b<0) then None else (if a && (b>=20 || b<=7) then Some true else Some false);;
